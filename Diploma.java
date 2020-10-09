@@ -16,6 +16,9 @@ public class Diploma {
         this.degreeModules.add(module);
     }
 
+    // This method is used to gather the information that will become the final output of the
+    // program using a for loop to loop through a module, and then use method lectureDetails in Module class
+    // to return lecture details to the loop.
     public String toString() {
         String output;
 
@@ -23,12 +26,13 @@ public class Diploma {
 
         for (Module tempModule : this.degreeModules) {
             output = output +"\n"+tempModule.getModuleName();
-            output = output +"\n"+tempModule.lectureDetails(); // Watch out for this
+            output = output +"\n"+tempModule.lectureDetails(); // Calls a method in Module class to pull details from Lecture class.
         }
 
         return output;
     }
 
+    // Accept output from toString method and creates output message
     public void displayDetails() {
         String output;
 

@@ -9,7 +9,6 @@ public class Lecture {
         setWeekNumber(weekNumber);
     }
 
-
     // Getters and setters
     public String getLectureTitle() {
         return this.lectureTitle;

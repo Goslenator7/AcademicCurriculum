@@ -1,8 +1,10 @@
 public class DemoDiploma {
     public static void main(String[] args) {
 
+        // Create diploma object from Diploma class
         Diploma diploma1 = new Diploma("MSc Computing");
 
+        // Create module objects which will be included in ArrayList in Diploma class
         Module module1 = new Module("Software Development 1");
         Module module2 = new Module("Web Design & Development");
         Module module3 = new Module("Design Dialogues");
@@ -10,6 +12,8 @@ public class DemoDiploma {
         Module module5 = new Module("Programming for the Web");
         Module module6 = new Module("User Experience and Service Design");
 
+        // Create lecture objects which will be in ArrayList in module class, which is in turn an
+        // ArrayList in diploma object
         Lecture l1 = new Lecture("Java variables", 1);
         Lecture l2 = new Lecture("Classes", 2);
         Lecture l3 = new Lecture("Methods", 3);
@@ -24,9 +28,11 @@ public class DemoDiploma {
         Lecture l11 = new Lecture("Databases & CRUD", 5);
         Lecture l12 = new Lecture("Javascript", 6);
 
+        // Add module objects to diploma
         diploma1.addModule(module1);
         diploma1.addModule(module2);
 
+        // add lectures to modules to be added to diploma
         module1.addLecture(l1);
         module1.addLecture(l2);
         module1.addLecture(l3);
@@ -41,6 +47,7 @@ public class DemoDiploma {
         module2.addLecture(l11);
         module2.addLecture(l12);
 
+        // Call display details method on diploma
         diploma1.displayDetails();
     }
 }

@@ -10,6 +10,8 @@ public class Module {
         setModuleName(moduleName);
     }
 
+    // Called from Diploma class to loop through moduleLectures list and return info about lectures.
+    // This output is then used in the toString method in Diploma class.
     public String lectureDetails() {
         String output = "";
 
