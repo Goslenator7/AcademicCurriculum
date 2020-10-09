@@ -14,7 +14,7 @@ public class Module {
         String output = "";
 
         for (Lecture tempLecture : this.moduleLectures) {
-            output = output + "Week: "+tempLecture.getWeekNumber()+"\n"+tempLecture.getLectureTitle();
+            output = output + "Week "+tempLecture.getWeekNumber()+" -\t"+tempLecture.getLectureTitle()+"\n";
         }
         return output;
     }
